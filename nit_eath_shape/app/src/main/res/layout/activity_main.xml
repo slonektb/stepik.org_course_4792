@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Какой формы Земля?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbDisk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="диск" />
+
+            <RadioButton
+                android:id="@+id/rbSphere"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="шар" />
+
+            <RadioButton
+                android:id="@+id/rbEllipsoid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="эллипосид" />
+
+            <RadioButton
+                android:id="@+id/rbCube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="куб" />
+
+            <Button
+                android:id="@+id/butAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="butAnswer" />
+
+            <TextView
+                android:id="@+id/tvAnswer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
